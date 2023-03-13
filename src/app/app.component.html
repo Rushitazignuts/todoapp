@@ -1,0 +1,101 @@
+<!-- <h1>Welcome to {{ title }}</h1> -->
+<!-- <h2>Two-way Binding Example</h2>
+<input [(ngModel)]="fullName" /> <br /><br />
+<p>{{ fullName }}</p>
+
+<div *ngFor="let arr of fruits; index as i">
+  <h2>{{ i }} {{ arr }}</h2>
+</div>
+<br />
+<div *ngFor="let arr of fruits; first as i">
+  <h2>{{ i }} {{ arr }}</h2>
+</div>
+
+<br />
+<div *ngFor="let arr of fruits; even as i">
+  <h2>{{ i }} {{ arr }}</h2>
+</div>
+<h2 class="text-success">hello world</h2>
+<h2 [class]="class">hello world</h2>
+<h2>hello {{ name }}</h2>
+<h2>{{ 2 * 2 }}</h2>
+<h2>{{ "welcome " + name }}</h2>
+<h2>{{ name.length }}</h2>
+<h2>{{ greet() }}</h2>
+<h2>{{ siteurl }}</h2>
+<div [ngSwitch]="multicolor">
+  <div *ngSwitchCase="'red'">red color</div>
+  <div *ngSwitchCase="'green'">green color</div>
+  <div *ngSwitchCase="'blue'">blue color</div>
+  <div *ngSwitchDefault>pic any color</div>
+</div>
+  <h2 *ngIf="displayname">Angular</h2>
+  <div *ngIf="displayoutput; then thenBlock; else elseBlock"></div>
+  <ng-template #thenBlock>
+    <h2>Angular</h2>
+  </ng-template>
+  <ng-template #elseBlock>
+    <h2>javascript</h2>
+  </ng-template>
+  <button (click)="onclick()">click me</button><br /><br />
+  <input #myInput type="text" />
+  <button (click)="logMessage(myInput.value)">log</button>
+  <h2 [style.color]="'red'">Style binding1</h2>
+  <h2 [style.color]="color">Style binding2</h2>
+  <h2 [ngStyle]="style">Style binding3</h2>
+  <input [id]="myid" type="text" value="john" />
+  <input id="{{ myid }}" type="text" value="john" />
+ <h2>{{address | uppercase}}</h2>
+ <h2>{{msg | titlecase}}</h2>
+ <h2>{{msg | slice:7:15}}</h2>
+ <h2>{{person | json}}</h2>
+ <h2>{{5.345| number :'1.2-3'}}</h2>
+ <h2>{{5.345| number :'2.4-5'}}</h2>
+ <h2>{{5.345| number :'3.1-2'}}</h2>
+ <h2>{{0.6| percent}}</h2>
+ <h2>{{0.6| currency}}</h2>
+ <h2>{{0.6| currency : 'EUR': 'code'}}</h2>
+ <h2>{{date}}</h2>
+ <h2>{{date|date : 'short'}}</h2>
+ <h2>{{date|date : 'mediumDate'}}</h2>
+ <h2>Emp list</h2>
+ <ul *ngFor = "let employee of emp">
+    <li>{{employee.name}} - {{employee.age}}</li>
+ </ul>
+
+ -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" routerLink="/">todo list</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/">Home <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/about">About</a>
+      </li>
+      
+      
+    </ul>
+   
+  </div>
+</nav>
+<router-outlet></router-outlet>
+
+
+
+
+<app-todo></app-todo>
+
+
+
+
+
+
+
+
+
